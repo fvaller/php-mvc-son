@@ -1,6 +1,6 @@
 # Curso de PHP com MVC - School Of Net
 
-## Curso basico sobre como funciona a estrutura do MVC no PHP e como implementar
+### Curso basico sobre como funciona a estrutura do MVC no PHP e como implementar
 - O conteudo é muito basico, serve apenas como explicação da estrutura;
 - O Router é muito basico, nao é usado atualmente;
 - Exemplo basico de conexao com PDO;
