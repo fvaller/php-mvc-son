@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Home</h3>
+    </div>
+
+    <div class="panel-body">
+
+        <h3>Lista de Carros</h3>
+
+        <table class="table table-hover">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Razao Social</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+            <tbody>
+                <?php  foreach ($this->view->data as $row) : ?>
+                <tr>
+                    <td><?=$row['id']?></td>
+                    <td><?=$row['nome']?></td>
+                    <td><?=$row['razao_social']?></td>
+                    <td><?=$row['email']?></td>
+                    <td><a href="/dados?id=<?=$row['id']?>">Ver dados</a></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+
+    </div>
+</div>

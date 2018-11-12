@@ -1,0 +1,26 @@
+<h3>Ver dados do Cliente:</h3>
+
+<table class="table table-hover">
+
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Razao Social</th>
+        <th>Email</th>
+    </tr>
+</thead>
+    <tbody>
+        <?php  
+        $row = $this->view->data;
+        if($row) :
+        ?>
+        <tr>
+            <td><?=$row['id']?></td>
+            <td><?=$row['nome']?></td>
+            <td><?=$row['razao_social']?></td>
+            <td><?=$row['email']?></td>
+        </tr>
+        <?php endif; ?>
+    </tbody>
+</table>
